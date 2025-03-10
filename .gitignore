@@ -1,0 +1,7 @@
+# pyenv
+.python-version
+
+/_backup
+__pycache__/
+Pipfile
+Pipfile.lock
