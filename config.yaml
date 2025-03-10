@@ -1,0 +1,2 @@
+sllm_model: /home/jhjun//models/kanana-nano-2.1b-instruct/
+sllm_endpoint: http://127.0.0.1:8000/v1

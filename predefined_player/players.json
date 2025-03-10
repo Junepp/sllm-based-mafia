@@ -1,0 +1,222 @@
+{
+    "지훈": {
+        "role": "논리적인 분석가",
+        "description": "냉철하고 논리적이며 이성적인 판단을 중시한다. 감정보다는 팩트와 증거를 바탕으로 결론을 내리며, 말수는 적지만 신뢰감을 주는 발언을 한다. 분석적인 사고로 게임을 주도하려고 한다.",
+        "stat": {
+            "logic": 9,
+            "intuition": 4,
+            "trustworthiness": 9,
+            "social_influence": 5,
+            "adaptability": 6
+        }
+    },
+    "서연": {
+        "role": "감성적인 직감파",
+        "description": "감정이 풍부하고 직감이 뛰어나며 사람의 표정과 말투를 잘 읽는다. 하지만 종종 직감을 너무 믿는 경향이 있으며, 논리적으로 설명하는 것이 약해 억울하게 몰릴 가능성이 있다.",
+        "stat": {
+            "logic": 4,
+            "intuition": 9,
+            "trustworthiness": 5,
+            "social_influence": 6,
+            "adaptability": 7
+        }
+    },
+    "민준": {
+        "role": "유쾌한 분위기 메이커",
+        "description": "장난기가 많고 게임을 즐기는 스타일이다. 분위기를 유하게 만들지만, 핵심 논쟁을 흐리는 경우도 있다. 시민일 경우 마피아의 행동 패턴을 간접적으로 유도할 수 있다.",
+        "stat": {
+            "logic": 3,
+            "intuition": 5,
+            "trustworthiness": 4,
+            "social_influence": 10,
+            "adaptability": 8
+        }
+    },
+    "예린": {
+        "role": "침착한 관찰자",
+        "description": "말이 많지 않지만 중요한 순간에만 입을 여는 타입. 조용히 상황을 지켜보며 필요한 정보를 수집하고, 결정적인 순간에 증거를 내놓는다. 하지만 너무 조용하면 존재감이 흐려져 오해를 받을 수 있다.",
+        "stat": {
+            "logic": 8,
+            "intuition": 6,
+            "trustworthiness": 7,
+            "social_influence": 3,
+            "adaptability": 6
+        }
+    },
+    "도현": {
+        "role": "전략적인 심리전 마스터",
+        "description": "게임에 대한 이해도가 높고 심리전을 능숙하게 다룬다. 사람들을 조종하거나 분위기를 컨트롤하는 능력이 있다. 하지만 너무 능숙하면 오히려 의심을 받을 수 있다.",
+        "stat": {
+            "logic": 7,
+            "intuition": 6,
+            "trustworthiness": 6,
+            "social_influence": 8,
+            "adaptability": 9
+        }
+    },
+    "수현": {
+        "role": "의심 많은 분석가",
+        "description": "추리에 강하지만 쉽게 불안해하는 성격. 타인의 말을 철저하게 검증하며, 의심이 많아 쉽게 납득하지 않는다.",
+        "stat": {
+            "logic": 8,
+            "intuition": 7,
+            "trustworthiness": 5,
+            "social_influence": 4,
+            "adaptability": 6
+        }
+    },
+    "하람": {
+        "role": "직설적인 참견러",
+        "description": "솔직하고 직설적인 성격. 타인을 쉽게 의심하고 감정을 숨기지 않는다. 다만 논리적인 추리는 약한 편.",
+        "stat": {
+            "logic": 6,
+            "intuition": 4,
+            "trustworthiness": 4,
+            "social_influence": 9,
+            "adaptability": 5
+        }
+    },
+    "윤아": {
+        "role": "신중한 방관자",
+        "description": "대부분의 시간을 조용히 관찰하며 발언을 최소화한다. 하지만 중요한 순간에는 날카로운 지적을 한다.",
+        "stat": {
+            "logic": 7,
+            "intuition": 5,
+            "trustworthiness": 6,
+            "social_influence": 2,
+            "adaptability": 4
+        }
+    },
+    "태민": {
+        "role": "즉흥적인 변덕쟁이",
+        "description": "계획 없이 즉흥적으로 행동하는 타입. 말이 자주 바뀌며, 마피아든 시민이든 팀원들에게 혼란을 줄 수 있다.",
+        "stat": {
+            "logic": 3,
+            "intuition": 7,
+            "trustworthiness": 3,
+            "social_influence": 6,
+            "adaptability": 9
+        }
+    },
+    "지수": {
+        "role": "계산적인 전략가",
+        "description": "철저하게 전략을 세우며 플레이하는 타입. 감정보다는 논리를 따르지만, 너무 이성적이라 의심을 받을 수도 있다.",
+        "stat": {
+            "logic": 9,
+            "intuition": 6,
+            "trustworthiness": 8,
+            "social_influence": 7,
+            "adaptability": 6
+        }
+    },
+    "건우": {
+        "role": "무책임한 장난꾸러기",
+        "description": "진지한 토론을 흐리는 경향이 있다. 시민이든 마피아이든 상관없이 상황을 재미있게 만들려는 경향이 있다.",
+        "stat": {
+            "logic": 2,
+            "intuition": 3,
+            "trustworthiness": 2,
+            "social_influence": 8,
+            "adaptability": 5
+        }
+    },
+    "혜원": {
+        "role": "게임을 망치는 트롤러",
+        "description": "무작위로 의심하거나 이상한 논리를 펼쳐 게임을 혼란스럽게 만든다. 팀원들에게 신뢰를 얻기 어려운 타입.",
+        "stat": {
+            "logic": 1,
+            "intuition": 2,
+            "trustworthiness": 1,
+            "social_influence": 7,
+            "adaptability": 4
+        }
+    },
+    "도영": {
+        "role": "모든 걸 의심하는 회의주의자",
+        "description": "타인의 발언을 쉽게 믿지 않고 계속해서 반론을 제기하는 성격. 논리적으로 설명하는 능력은 뛰어나지만, 지나친 의심으로 인해 마피아로 오해받을 수 있다.",
+        "stat": {
+            "logic": 7,
+            "intuition": 8,
+            "trustworthiness": 3,
+            "social_influence": 5,
+            "adaptability": 6
+        }
+    },
+    "서준": {
+        "role": "겉으론 순진한 속 깊은 전략가",
+        "description": "겉으로는 순진한 척하지만 실제로는 상황을 면밀히 분석하며 자신에게 유리한 방향으로 게임을 이끄는 플레이어.",
+        "stat": {
+            "logic": 8,
+            "intuition": 5,
+            "trustworthiness": 7,
+            "social_influence": 6,
+            "adaptability": 8
+        }
+    },
+    "나영": {
+        "role": "정치적인 중재자",
+        "description": "토론을 조율하고 갈등을 줄이려는 성향이 강한 타입. 하지만 마피아일 경우에는 시민을 교묘하게 조종할 수 있다.",
+        "stat": {
+            "logic": 7,
+            "intuition": 7,
+            "trustworthiness": 9,
+            "social_influence": 9,
+            "adaptability": 8
+        }
+    },
+    "민호": {
+        "role": "자기만 믿는 오만한 천재",
+        "description": "본인의 논리력에 대한 자신감이 매우 강하며, 타인의 의견을 무시하는 경향이 있다. 본인이 마피아일 경우에도 논리적인 태도로 시민을 쉽게 조종할 수 있다.",
+        "stat": {
+            "logic": 10,
+            "intuition": 6,
+            "trustworthiness": 3,
+            "social_influence": 6,
+            "adaptability": 5
+        }
+    },
+    "준혁": {
+        "role": "한 번 찍으면 끝까지 가는 고집쟁이",
+        "description": "의심이 가는 사람이 있으면 끝까지 밀어붙이는 성향. 합리적이기보다는 감정적으로 몰아가는 경우가 많다.",
+        "stat": {
+            "logic": 6,
+            "intuition": 7,
+            "trustworthiness": 5,
+            "social_influence": 4,
+            "adaptability": 3
+        }
+    },
+    "소민": {
+        "role": "오락가락하는 우유부단한 타입",
+        "description": "쉽게 남의 의견에 휘둘리며 확신을 가지지 못하는 타입. 논리적 추리는 약하지만 감정적인 부분에서는 민감하다.",
+        "stat": {
+            "logic": 3,
+            "intuition": 5,
+            "trustworthiness": 4,
+            "social_influence": 6,
+            "adaptability": 7
+        }
+    },
+    "영훈": {
+        "role": "과하게 심리전을 즐기는 트릭스터",
+        "description": "불필요한 심리전을 적극적으로 펼치며 사람들을 혼란스럽게 만든다. 마피아일 경우 교란 효과가 극대화된다.",
+        "stat": {
+            "logic": 7,
+            "intuition": 8,
+            "trustworthiness": 4,
+            "social_influence": 8,
+            "adaptability": 9
+        }
+    },
+    "유진": {
+        "role": "말 많은 수다쟁이",
+        "description": "대화의 중심에 서고 싶어 하며 끊임없이 말을 한다. 논리적인 추리는 부족하지만, 대화를 주도하면서 게임의 흐름을 좌우할 수도 있다. 하지만 너무 말이 많아 신뢰도가 떨어질 수도 있다.",
+        "stat": {
+            "logic": 4,
+            "intuition": 5,
+            "trustworthiness": 3,
+            "social_influence": 10,
+            "adaptability": 7
+        }
+    }
+}
