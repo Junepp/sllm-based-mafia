@@ -20,7 +20,6 @@ def get_player(num_player=5):
     candidates = list(players.keys())
     members = random.sample(candidates, num_player)
     
-    
     return members
 
 if __name__ == "__main__":
