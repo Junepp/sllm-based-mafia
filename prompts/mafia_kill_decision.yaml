@@ -1,0 +1,22 @@
+_type: "prompt"
+
+template: "
+  마피아 게임에서 암살 대상을 정해줘.
+
+  너는 {mafia_name}이고, 마피아야.
+  
+  [게임 진행상황]
+  {message_history}
+
+  [생존 시민]
+  {alive_civil}
+
+  [암살 규칙]
+  - 암살 대상은 생존한 시민 중에서 골라야해.
+  - 암살 대상은 한 명만 선택해야해.
+  - 암살 대상은 이름만 말해야해.
+
+  암살 대상:
+  "
+
+input_variables: ["mafia_name", "message_history", "alive_civil"]

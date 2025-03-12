@@ -1,0 +1,24 @@
+_type: "prompt"
+
+template: "
+  마피아 게임에서 마피아로 투표할 대상을 정해줘.
+
+  너의 이름은 {name}, 마피아 게임을 플레이중이며 맡은 역할은 {role}이야.
+  남들은 너를 '{reputation}'로 요약해
+
+  초조해하거나 수상한 행동을 보이는 사람이 마피아일 확률이 높아.
+  
+  [게임 진행상황]
+  {message_history}
+
+  [생존자]
+  {alive_players}
+
+  [투표 규칙]
+  - 투표 대상은 생존자 중에서 골라야해.
+  - 투표 대상은 단 한 명만, 이름만 한 단어로 출력
+  
+  마피아로 추정되는 인물: 
+  "
+
+input_variables: ["name", "role", "reputation", "message_history", "alive_players"]
