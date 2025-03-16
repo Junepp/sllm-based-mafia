@@ -3,7 +3,12 @@ _type: "prompt"
 template: "
   마피아 게임에서 암살 대상을 정해줘.
 
-  너는 {mafia_name}이고, 마피아야.
+  너는 {name}이고, 마피아야. 
+  남들은 너를 '{reputation}'로 요약해
+  
+  너가 마피아임을 들키지 않고 모든 시민을 죽이면 승리해.
+  들키지 않기 위해선 너를 몰아가거나 의심하는 인물을 위주로 죽이면 좋아.
+  하지만 너를 의심하던 사람을 너무 노골적으로 죽이면 다른 플레이어들이 눈치챌 수 있어.
   
   [게임 진행상황]
   {message_history}
@@ -12,11 +17,12 @@ template: "
   {alive_civil}
 
   [암살 규칙]
-  - 암살 대상은 생존한 시민 중에서 골라야해.
+  - 암살 대상은 생존 시민 중에서 골라야해.
   - 암살 대상은 한 명만 선택해야해.
-  - 암살 대상은 이름만 말해야해.
+
+  {format_instructions}
 
   암살 대상:
   "
 
-input_variables: ["mafia_name", "message_history", "alive_civil"]
+input_variables: ["name", "reputation", "message_history", "alive_civil"]

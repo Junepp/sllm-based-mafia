@@ -1,6 +1,7 @@
 import yaml
 from langchain_google_genai import ChatGoogleGenerativeAI
 
+
 def get_gemini_instance():
     with open("gemini_key.yaml", "r") as f:
         config_yaml = yaml.load(f, Loader=yaml.FullLoader)
@@ -14,7 +15,7 @@ def get_gemini_instance():
     try:
         response = llm.invoke("test message")
         # print(response)
-        
+
         return llm
         
     except Exception as e:
@@ -29,6 +30,3 @@ if __name__ == "__main__":
     response = retval.invoke("너는 누구니?")
     print(response.content)
     
-    # output_stream = retval.stream("너는 누구니?")
-    # for chunk in output_stream:
-    #     print(chunk.content, end="

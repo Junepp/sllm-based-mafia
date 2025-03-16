@@ -1,34 +1,32 @@
-import yaml
-from box import Box
 from game import Game
 
-def game():
-    with open("config.yaml", "r") as f:
-        config_yaml = yaml.load(f, Loader=yaml.FullLoader)
-        config = Box(config_yaml)
-    
+def game():   
     # 게임 세팅 (사용자 입력)
     num_player = 5
     limit_speak = 10
     
-    print("============game start============")
-    
     # 게임 초기화
     game = Game(
-        sllm_name=config.sllm_model,
-        sllm_endpoint=config.sllm_endpoint,
         num_player=num_player,
         limit_speak=limit_speak
     )
-    
-    # 게임 진행
     turn_idx = 1
+        
+    game.logger.info("============game start============")
     game.get_player_status()  # DEBUG
     
-    while not game.is_game_over:
-        game.round(turn_idx)
+    is_gameover = False
+    while not is_gameover:
+        is_gameover = game.round(turn_idx)
         
-        input(f"{turn_idx}라운드가 끝. 계속하려면 enter")
+        if is_gameover:
+            game.logger.info("게임이 종료되었습니다")
+            break
+        
+        else:
+            game.logger.info(f"{turn_idx}라운드 끝")
+            input(f"{turn_idx}라운드 끝. 계속하려면 enter")
+        
         turn_idx += 1
     
 if __name__ == "__main__":

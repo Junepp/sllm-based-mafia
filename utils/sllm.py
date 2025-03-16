@@ -1,10 +1,16 @@
+import yaml
+from box import Box
 from langchain_openai import ChatOpenAI
 
 
-def get_sllm_instance(model_name, model_endpoint):
+def get_sllm_instance():
+    with open("config.yaml", "r") as f:
+        config_yaml = yaml.load(f, Loader=yaml.FullLoader)
+        config = Box(config_yaml)
+    
     sllm = ChatOpenAI(
-        model=model_name,
-        base_url=model_endpoint,
+        model=config.sllm_model,
+        base_url=config.sllm_endpoint,
         api_key="empty",
         temperature=1
     )
@@ -22,18 +28,5 @@ def get_sllm_instance(model_name, model_endpoint):
 
 
 if __name__ == "__main__":
-    mn = "/home/jhjun/models/kanana-nano-2.1b-instruct/"
-    ep = "http://127.0.0.1:8008/v1"
-    
-    # mn = "/app/models/kanana-nano-2.1b-instruct/"
-    # ep = "http://192.168.105.26:8008/v1"
-    
-    retval = get_sllm_instance(model_name=mn, model_endpoint=ep)
-    
-    response = retval.invoke("너는 누구니?")
-    print(response.content)
-    
-    output_stream = retval.stream("너는 누구니?")
-    for chunk in output_stream:
-        print(chunk.content, end="")
+    retval = get_sllm_instance()
     
